@@ -1,3 +1,5 @@
+[![](https://img.shields.io/github/stars/RomanSoloweow/SendEmail)](https://github.com/RomanSoloweow/SendEmail) [![](https://img.shields.io/github/license/RomanSoloweow/SendEmail)](https://github.com/RomanSoloweow/SendEmail) [![](https://img.shields.io/github/languages/code-size/RomanSoloweow/SendEmail)](https://github.com/RomanSoloweow/SendEmail) 
+ [![]( https://img.shields.io/github/last-commit/RomanSoloweow/SendEmail)](https://github.com/RomanSoloweow/SendEmail)
 # SendEmail
 
  - Simple client for sending Email with the ability to attach files
