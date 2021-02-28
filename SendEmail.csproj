@@ -9,7 +9,6 @@
     <Folder Include="Themes\" />
     <AvaloniaResource Include="Assets\**" />
     <AvaloniaResource Include="**\*.xaml" />
-    
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.0" />

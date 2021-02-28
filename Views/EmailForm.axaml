@@ -32,7 +32,8 @@
             <Button Grid.Column="0" Margin="5,0" Grid.Row="0" x:Name="AddFileButton">Add file</Button>
             <Button Grid.Column="1" Margin="5,0" Grid.Row="0" x:Name="DeleteSelectedButton">Delete selected files</Button>
             <Button Grid.Column="2" Margin="5,0" Grid.Row="0" x:Name="DeleteAllButton">Delete all files</Button>
-            <ListBox BorderThickness="1" Grid.ColumnSpan="4" Grid.Row="1" x:Name="Files" SelectionMode="Multiple" Margin="0,10">
+            <ListBox BorderThickness="1" Grid.ColumnSpan="4" Grid.Row="1" 
+                     x:Name="Files" SelectionMode="Multiple" Margin="0,10" MinHeight="50">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel />
