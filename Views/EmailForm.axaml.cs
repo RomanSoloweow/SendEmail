@@ -11,9 +11,10 @@ namespace SendEmail.Views
         public EmailForm()
         {
             InitializeComponent();
+            SetupBinding();
         }
 
-        private void InitializeComponent()
+        private void SetupBinding()
         {
             this.WhenActivated(disposables =>
             {
@@ -78,7 +79,6 @@ namespace SendEmail.Views
                
             });
 
-            AvaloniaXamlLoader.Load(this);
         }
     }
 }

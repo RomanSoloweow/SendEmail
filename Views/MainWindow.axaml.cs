@@ -15,23 +15,19 @@ namespace SendEmail.Views
         {
             InitializeComponent();
             Current = this;
-#if DEBUG
-            this.AttachDevTools();
-#endif
+            SetupBinding();
         }
 
-        private void InitializeComponent()
+        private void SetupBinding()
         {
+
             this.WhenActivated(disposables =>
             {
-                // this.AddFile
                 this.Bind(ViewModel, 
                         x=>x.EmailForm,
                         x=>x.EmailForm.DataContext)
                     .DisposeWith(disposables);
             });
-
-            AvaloniaXamlLoader.Load(this);
         }
     }
 }

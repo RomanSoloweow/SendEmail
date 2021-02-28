@@ -25,7 +25,7 @@
     <PackageReference Include="ReactiveUI.Validation" Version="2.1.1" />
     <PackageReference Include="HistoricalReactiveCommand" Version="0.5.0" />
     <PackageReference Include="ReactiveUI.Fody" Version="13.1.1" />
-    <PackageReference Include="XamlNameReferenceGenerator" Version="0.5.11" />
+    <PackageReference Include="XamlNameReferenceGenerator" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
