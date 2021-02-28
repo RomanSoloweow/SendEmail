@@ -1,0 +1,38 @@
+[
+    {
+        "Name":"Gmail",
+        "Server":"smtp.gmail.com",
+        "Port":587,
+        "Patterns": ["gmail.com"]
+    },
+    {
+        "Name":"Yandex",
+        "Server":"smtp.yandex.ru",
+        "Port":465,
+        "Patterns": ["yandex.ru", "ya.ru"]
+    },
+    {
+        "Name":"Mail.ru",
+        "Server":"smtp.mail.ru",
+        "Port":465,
+        "Patterns": ["mail.ru"]
+    },
+    {
+        "Name":"Рамблер",
+        "Server":"smtp.rambler.ru",
+        "Port":465,
+        "Patterns": ["rambler.ru"]
+    },    
+    {
+        "Name":"iCloud",
+        "Server":"smtp.mail.me.com",
+        "Port":587,
+        "Patterns": ["icloud.com"]
+    },
+    {
+        "Name":"Yahoo",
+        "Server":"smtp.mail.yahoo.com",
+        "Port":465,
+        "Patterns": ["yahoo.com"]
+    }
+]

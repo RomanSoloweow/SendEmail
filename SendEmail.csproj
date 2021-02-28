@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Themes\" />
+    <AvaloniaResource Include="Assets\**" />
+    <AvaloniaResource Include="**\*.xaml" />
+    
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
+    <PackageReference Include="Avalonia.ReactiveUI.Events" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Xaml.Behaviors" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Xaml.Interactions" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Xaml.Interactions.Custom" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Xaml.Interactivity" Version="0.10.0" />
+    <PackageReference Include="Dock.Model" Version="0.10.0" />
+    <PackageReference Include="MailKit" Version="2.10.1" />
+    <PackageReference Include="ReactiveUI.Validation" Version="2.1.1" />
+    <PackageReference Include="HistoricalReactiveCommand" Version="0.5.0" />
+    <PackageReference Include="ReactiveUI.Fody" Version="13.1.1" />
+    <PackageReference Include="XamlNameReferenceGenerator" Version="0.5.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Required by XamlNameReferenceGenerator -->
+    <AdditionalFiles Include="**\*.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Servers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

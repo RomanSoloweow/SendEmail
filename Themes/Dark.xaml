@@ -1,0 +1,13 @@
+<Style xmlns="https://github.com/avaloniaui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:sys="clr-namespace:System;assembly=netstandard">
+    <Style.Resources>
+        <SolidColorBrush x:Key="FormBackground" Color="#2b2b2b" />
+        <SolidColorBrush x:Key="LabelForeground" Color="White" />
+        <SolidColorBrush x:Key="TextBoxForeground" Color="White" />
+        <SolidColorBrush x:Key="TextBoxBackground" Color="#2b2b2b" />
+        <SolidColorBrush x:Key="ListBoxBackground" Color="#1a1a1a" />
+    </Style.Resources>
+</Style>

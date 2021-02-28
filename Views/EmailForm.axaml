@@ -1,0 +1,51 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+             xmlns:ia="clr-namespace:Avalonia.Xaml.Interactions.Core;assembly=Avalonia.Xaml.Interactions"
+             xmlns:iac="clr-namespace:Avalonia.Xaml.Interactions.Custom;assembly=Avalonia.Xaml.Interactions.Custom"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:views="clr-namespace:SendEmail.Views"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SendEmail.Views.EmailForm" Background="{DynamicResource FormBackground}">
+    <DockPanel LastChildFill="False" Margin="10" >
+        <Label DockPanel.Dock="Top">From</Label>
+        <TextBox DockPanel.Dock="Top" x:Name="From"/>
+        <Label DockPanel.Dock="Top">Password</Label>
+        <TextBox DockPanel.Dock="Top" x:Name="Password" PasswordChar="*"/>
+        <Label DockPanel.Dock="Top">To</Label>
+        <TextBox DockPanel.Dock="Top" x:Name="To" />
+        <Label DockPanel.Dock="Top">Server</Label>
+        <ComboBox DockPanel.Dock="Top" x:Name="Servers">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="{x:Type system:String}">
+                    <TextBlock Text="{Binding }"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ComboBox>
+        <Label DockPanel.Dock="Top">Subject</Label>
+        <TextBox DockPanel.Dock="Top" x:Name="Subject" />
+        <Label DockPanel.Dock="Top">Message</Label>
+        <TextBox DockPanel.Dock="Top" x:Name="Message"  TextWrapping="Wrap" AcceptsReturn="True" MinHeight="50" />
+        <Grid DockPanel.Dock="Top" Margin="0,10" ColumnDefinitions="Auto, Auto, Auto, *" RowDefinitions="*, *" >
+            <Button Grid.Column="0" Margin="5,0" Grid.Row="0" x:Name="AddFileButton">Add file</Button>
+            <Button Grid.Column="1" Margin="5,0" Grid.Row="0" x:Name="DeleteSelectedButton">Delete selected files</Button>
+            <Button Grid.Column="2" Margin="5,0" Grid.Row="0" x:Name="DeleteAllButton">Delete all files</Button>
+            <ListBox BorderThickness="1" Grid.ColumnSpan="4" Grid.Row="1" x:Name="Files" SelectionMode="Multiple" Margin="0,10">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="{x:Type system:String}">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding }"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <Button DockPanel.Dock="Top" x:Name="SendEmail">SendEmail</Button>
+    </DockPanel>
+</UserControl>
+

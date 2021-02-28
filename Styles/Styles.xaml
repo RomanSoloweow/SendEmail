@@ -1,0 +1,10 @@
+﻿<Styles xmlns="https://github.com/avaloniaui">
+	
+	
+    <StyleInclude Source="/Styles/TextBox.xaml"/>
+    <StyleInclude Source="/Styles/Label.xaml"/>
+    
+</Styles>
+
+    
+    
